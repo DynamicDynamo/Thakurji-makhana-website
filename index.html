@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thakurji Makhana | Premium Foxnuts</title>
+
+    <meta name="description"
+        content="Premium roasted makhana by Thakurji Makhana. Healthy, crunchy and delicious foxnuts in multiple flavours.">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            Thakurji
+            <span>MAKHANA</span>
+        </a>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#products">Shop</a>
+                </li>
+
+                <li>
+                    <a href="#why">Why Us</a>
+                </li>
+
+                <li>
+                    <a href="#about">Our Story</a>
+                </li>
+
+                <li>
+                    <a href="#reviews">Reviews</a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search..."
+                    onkeyup="searchProducts()">
+
+            </div>
+
+
+            <!-- Profile -->
+
+            <button
+                class="icon-btn"
+                title="Profile">
+
+                ♙
+
+            </button>
+
+
+            <!-- Cart -->
+
+            <button
+                class="icon-btn"
+                onclick="openCart()"
+                title="Cart">
+
+                🛒
+
+                <span
+                    class="cart-count"
+                    id="cartCount">
+
+                    0
+
+                </span>
+
+            </button>
+
+
+            <!-- Mobile menu -->
+
+            <button
+                class="menu-btn"
+                onclick="toggleMenu()">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                Premium Indian Foxnuts
+            </div>
+
+            <h1>
+                Crunch that feels
+                <span>divine.</span>
+            </h1>
+
+            <p>
+                Discover deliciously roasted makhana crafted
+                for modern snacking. Light, crunchy and full
+                of flavour.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#products"
+                    class="btn btn-primary">
+
+                    Shop Makhana →
+
+                </a>
+
+                <a
+                    href="#about"
+                    class="btn btn-outline">
+
+                    Our Story
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="hero-circle">
+
+                <div class="hero-product">
+
+                    <div class="package-text">
+
+                        <small>
+                            PREMIUM
+                        </small>
+
+                        <h3>
+                            THAKURJI
+                        </h3>
+
+                        <p>
+                            MAKHANA
+                        </p>
+
+                        <br>
+
+                        <small>
+                            CLASSIC ROASTED
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FEATURES
+    ========================================== -->
+
+    <div class="features">
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🌱
+            </div>
+
+            <div>
+
+                <h4>
+                    Premium Quality
+                </h4>
+
+                <p>
+                    Carefully selected makhana
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🔥
+            </div>
+
+            <div>
+
+                <h4>
+                    Perfectly Roasted
+                </h4>
+
+                <p>
+                    Crunchy in every bite
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🥣
+            </div>
+
+            <div>
+
+                <h4>
+                    Healthy Snacking
+                </h4>
+
+                <p>
+                    Made for everyday moments
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                📦
+            </div>
+
+            <div>
+
+                <h4>
+                    Freshly Packed
+                </h4>
+
+                <p>
+                    Sealed for freshness
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         PRODUCTS
+    ========================================== -->
+
+    <section id="products">
+
+        <div class="section-heading">
+
+            <small>
+                Our Collection
+            </small>
+
+            <h2>
+                Find Your Favourite Crunch
+            </h2>
+
+            <p>
+                Four delicious flavours. One premium
+                makhana experience.
+            </p>
+
+        </div>
+
+
+        <div
+            class="products"
+            id="productGrid">
+
+
+            <!-- CLASSIC -->
+
+            <div
+                class="product-card"
+                data-name="classic">
+
+                <div class="product-image">
+
+                    <div class="badge">
+                        BESTSELLER
+                    </div>
+
+                    <div class="product-package">
+
+                        <div class="product-package-content">
+
+                            <small>
+                                THAKURJI
+                            </small>
+
+                            <h3>
+                                Classic
+                            </h3>
+
+                            <span>
+                                ROASTED MAKHANA
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Classic Makhana
+                    </h3>
+
+                    <p>
+                        Lightly roasted & naturally delicious.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+
+                            ₹149
+
+                            <span class="old-price">
+                                ₹179
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Classic Makhana',149)">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MASALA -->
+
+            <div
+                class="product-card"
+                data-name="masala">
+
+                <div class="product-image">
+
+                    <div class="product-package">
+
+                        <div class="product-package-content">
+
+                            <small>
+                                THAKURJI
+                            </small>
+
+                            <h3>
+                                Masala
+                            </h3>
+
+                            <span>
+                                SPICY ROASTED
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Masala Makhana
+                    </h3>
+
+                    <p>
+                        Bold Indian spices with crunchy makhana.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+
+                            ₹159
+
+                            <span class="old-price">
+                                ₹189
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Masala Makhana',159)">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PERI PERI -->
+
+            <div
+                class="product-card"
+                data-name="peri peri">
+
+                <div class="product-image">
+
+                    <div class="badge">
+                        POPULAR
+                    </div>
+
+                    <div class="product-package">
+
+                        <div class="product-package-content">
+
+                            <small>
+                                THAKURJI
+                            </small>
+
+                            <h3>
+                                Peri Peri
+                            </h3>
+
+                            <span>
+                                FIERY & CRUNCHY
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Peri Peri Makhana
+                    </h3>
+
+                    <p>
+                        Fiery, tangy and seriously addictive.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+
+                            ₹169
+
+                            <span class="old-price">
+                                ₹199
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Peri Peri Makhana',169)">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HIMALAYAN SALT -->
+
+            <div
+                class="product-card"
+                data-name="himalayan salt">
+
+                <div class="product-image">
+
+                    <div class="product-package">
+
+                        <div class="product-package-content">
+
+                            <small>
+                                THAKURJI
+                            </small>
+
+                            <h3>
+                                Himalayan
+                            </h3>
+
+                            <span>
+                                PINK SALT
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3>
+                        Himalayan Salt
+                    </h3>
+
+                    <p>
+                        Simple, clean and naturally satisfying.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <div class="price">
+
+                            ₹159
+
+                            <span class="old-price">
+                                ₹189
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="add-cart"
+                            onclick="addToCart('Himalayan Salt Makhana',159)">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         WHY CHOOSE US
+    ========================================== -->
+
+    <section
+        class="why-section"
+        id="why">
+
+        <div class="why-content">
+
+
+            <div class="why-image">
+
+                <div class="big-makhana">
+                    THAKURJI
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div
+                    class="section-heading"
+                    style="text-align:left;margin-bottom:20px">
+
+                    <small>
+                        Why Thakurji?
+                    </small>
+
+                    <h2>
+                        Made for better snacking.
+                    </h2>
+
+                </div>
+
+
+                <div class="why-list">
+
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            🌱
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Quality First
+                            </h3>
+
+                            <p>
+                                We select premium makhana for
+                                a better crunch and taste.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            🔥
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Carefully Roasted
+                            </h3>
+
+                            <p>
+                                Roasted to achieve the perfect
+                                balance of lightness and crunch.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            ❤️
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Made With Care
+                            </h3>
+
+                            <p>
+                                Every pack is prepared with
+                                attention to quality and freshness.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-icon">
+                            ✨
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Delicious Flavours
+                            </h3>
+
+                            <p>
+                                From classic to peri peri,
+                                there's a flavour for everyone.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT
+    ========================================== -->
+
+    <section
+        class="about"
+        id="about">
+
+        <div class="about-content">
+
+            <small>
+                OUR STORY
+            </small>
+
+            <h2>
+                Tradition meets modern snacking.
+            </h2>
+
+            <p>
+                Thakurji Makhana was created with a simple idea:
+                make everyday snacking delicious, premium and
+                memorable. We bring the humble Indian foxnut
+                into a modern experience while keeping its
+                natural character at heart.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         REVIEWS
+    ========================================== -->
+
+    <section id="reviews">
+
+        <div class="section-heading">
+
+            <small>
+                Loved By Snackers
+            </small>
+
+            <h2>
+                What our customers say
+            </h2>
+
+        </div>
+
+
+        <div class="reviews">
+
+
+            <div class="review">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "The classic flavour is so crunchy.
+                    Perfect evening snack with chai!"
+                </p>
+
+                <h4>
+                    — Priya S.
+                </h4>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Peri peri is my favourite.
+                    The flavour is really good without
+                    overpowering the makhana."
+                </p>
+
+                <h4>
+                    — Rahul M.
+                </h4>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="review-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Really premium packaging and taste.
+                    Definitely ordering again."
+                </p>
+
+                <h4>
+                    — Ananya K.
+                </h4>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         NEWSLETTER
+    ========================================== -->
+
+    <section class="newsletter">
+
+        <h2>
+            Get the crunch in your inbox.
+        </h2>
+
+        <p>
+            Subscribe for new flavours, offers and updates.
+        </p>
+
+
+        <form
+            class="subscribe"
+            onsubmit="subscribeUser(event)">
+
+            <input
+                type="email"
+                placeholder="Your email address"
+                required>
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <div class="logo">
+
+                    Thakurji
+
+                    <span>
+                        MAKHANA
+                    </span>
+
+                </div>
+
+                <p class="footer-about">
+
+                    Premium roasted makhana made for
+                    delicious everyday snacking.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Shop
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Classic Makhana
+                    </li>
+
+                    <li>
+                        Masala Makhana
+                    </li>
+
+                    <li>
+                        Peri Peri Makhana
+                    </li>
+
+                    <li>
+                        Himalayan Salt
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Company
+                </h3>
+
+                <ul>
+
+                    <li>
+                        About Us
+                    </li>
+
+                    <li>
+                        Our Story
+                    </li>
+
+                    <li>
+                        Contact
+                    </li>
+
+                    <li>
+                        FAQ
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Help
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Shipping
+                    </li>
+
+                    <li>
+                        Returns
+                    </li>
+
+                    <li>
+                        Privacy Policy
+                    </li>
+
+                    <li>
+                        Terms & Conditions
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Thakurji Makhana.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         CART OVERLAY
+    ========================================== -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        onclick="closeCart()">
+    </div>
+
+
+
+    <!-- =========================================
+         CART SIDEBAR
+    ========================================== -->
+
+    <div
+        class="cart-sidebar"
+        id="cartSidebar">
+
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button
+                class="close-cart"
+                onclick="closeCart()">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems">
+
+            <p class="empty-cart">
+
+                Your cart is empty.
+
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <div class="total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <span id="cartTotal">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <button
+                class="checkout"
+                onclick="checkout()">
+
+                Proceed to Checkout
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         TOAST MESSAGE
+    ========================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+    </div>
+
+
+
+    <!-- JAVASCRIPT FILE -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
